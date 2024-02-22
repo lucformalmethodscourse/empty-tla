@@ -11,8 +11,8 @@ TypeOK == v \in 0..Max
 Init == v = 0
 
 Next == 
-  \/  /\ v < Max
-      /\ v' = v + 1
+  \/  /\ v' = v + 1
+      /\ v' <= Max      
   \/  /\ v >= Max
       /\ UNCHANGED <<v>>
 
